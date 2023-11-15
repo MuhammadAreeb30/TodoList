@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.todo-container {
+    max-width: 400px;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+img{
+  width: 120px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.input-container {
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 95%;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+  background-color: #000;
+  color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    transition: all 0.3s linear;
+}
+
+li:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+li:hover .fa-trash-alt{
+  color: #ff0000;
+}
+
+li:hover .fa-edit{
+  color: #00b894;
+}
+
+.fa-edit:hover{
+  color: #00b894;
+}
+
+.text{
+  font-size: 1rem;
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+
+i{
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.fa-plus:hover{
+  color: #0984e3;
+}
+
+.btn {
+  letter-spacing: 0.1em;
+  background-color: #000;
+  cursor: pointer;
+  font-size: 0.90rem;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 1rem;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+.effect04 {
+    --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+    display: var(--uismLinkDisplay);
+    outline: none;
+    border: none;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+  }
+  
+  .effect04::before,
+  .effect04 span {
+    margin: 0 auto;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-duration: 0.4s;
+    color: #fff;
+  }
+  
+  .effect04:hover {
+    background-color: rgb(85, 41, 220);
+  }
+  
+  .effect04:hover span {
+    -webkit-transform: translateY(-400%) scale(-0.1, 20);
+    transform: translateY(-400%) scale(-0.1, 20);
+  }
+  
+  .effect04::before {
+    content: attr(data-sm-link-text);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(500%) scale(-0.1, 20);
+    transform: translateY(500%) scale(-0.1, 20);
+  }
+  
+  .effect04:hover::before {
+    letter-spacing: 0.05em;
+    -webkit-transform: translateY(0) scale(1, 1);
+    transform: translateY(0) scale(1, 1);
+  }
